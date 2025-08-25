@@ -2,6 +2,7 @@ import MealItem from './MealItem.jsx';
 import { useHttp } from '../hooks/useHttp.js';
 import Error from './Error.jsx';
 
+// requestConfig created outside of component function to avoid infinite loops
 const requestConfig = {};
 
 export default function Meals() {
